@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/winkado/winkado.github.io/blob/main/src/readme.png?raw=true" width="512">
+<img src="https://github.com/winkado/winkado.github.io/blob/master/src/readme.png?raw=true" width="512">
 
 # Epitome
 
