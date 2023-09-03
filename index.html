@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epitome</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        /* Hide number input arrows */
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        
+        /* Firefox */
+        input[type=number] {
+          -moz-appearance: textfield;
+        }
+        </style> 
+    <meta name="color-scheme" content="dark">
+</head>
+<body class="bg-gradient-to-r from-[#11215b] to-[#d100fe]">
+    <header class='py-4 h-70px flex items-center justify-center py-0 px-[2%] bg-white/10'>           
+        <div class="flex items-center">
+            <img src="./src/paragon.png" class="h-14">
+            <h2 class="text-white text-2xl font-bold m-2">Epitome - BTD6 Paragon Calculator</h2>
+        </div>
+    </header>
+    <section class="flex justify-center items-center min-h-screen w-full">
+        <div class="flex justify-center items-center relative w-[400px] h-[700px] border-[2px] border-solid border-[#ffffff00] md:border-[#ffffff40] rounded-[20px] bg-white/0 md:bg-white/10">
+            <div class="form-value">
+                    <div class="relative mx-0 my-[30px] w-[310px] border-b-2 border-solid border-white">
+                        <ion-icon title="Total cash spent, excluding the first 3 T5s" class="cursor-pointer absolute right-[8px] text-white text-[1.2em] top-[20px]" name="information-circle-outline"></ion-icon>
+                        <input class="w-full h-[50px] bg-transparent border-none outline-none pr-[35px] pl-[5px] text-white" type="number" onkeydown="javascript: return ['Backspace','Delete','ArrowLeft','ArrowRight'].includes(event.code) ? true : !isNaN(Number(event.key)) && event.code!=='Space'" name="cost" id="cost" value="0" min="0" max="250000" step="25">
+                        <output class="absolute top-1/2 left-[5px] translate-y-[-150%] text-white pointer-events-none duration-500" name="cost" id="costId">Cash Spent</output>
+                    </div>
+                    <div class="relative mx-0 my-[30px] w-[310px] border-b-2 border-solid border-white">
+                        <ion-icon title="Total pops, across all towers" class="cursor-pointer absolute right-[8px] text-white text-[1.2em] top-[20px]" name="information-circle-outline"></ion-icon>
+                        <input class="w-full h-[50px] bg-transparent border-none outline-none pr-[35px] pl-[5px] text-white" type="number" onkeydown="javascript: return ['Backspace','Delete','ArrowLeft','ArrowRight'].includes(event.code) ? true : !isNaN(Number(event.key)) && event.code!=='Space'" name="pops" id="pops" value="0" min="0" max="16200000" step="180">
+                        <output class="absolute top-1/2 left-[5px] translate-y-[-150%] text-white pointer-events-none duration-500" name="pops" id="popsId">Total Pops</output>
+                    </div>
+                    <div class="relative mx-0 my-[30px] w-[310px] border-b-2 border-solid border-white">
+                        <ion-icon title="Total cash generated, applies to bottom path buccaneers" class="cursor-pointer absolute right-[8px] text-white text-[1.2em] top-[20px]" name="information-circle-outline"></ion-icon>
+                        <input class="w-full h-[50px] bg-transparent border-none outline-none pr-[35px] pl-[5px] text-white" type="number" onkeydown="javascript: return ['Backspace','Delete','ArrowLeft','ArrowRight'].includes(event.code) ? true : !isNaN(Number(event.key)) && event.code!=='Space'" name="cash" id="cash" value="0" min="0" max="4050000" step="45">
+                        <output class="absolute top-1/2 left-[5px] translate-y-[-150%] text-white pointer-events-none duration-500" name="cash" id="cashId">Total Cash Generated</output>
+                    </div>
+                    <div class="relative mx-0 my-[30px] w-[310px] border-b-2 border-solid border-white">
+                        <ion-icon title="Total *additional T5s, excluding the first 3" class="cursor-pointer absolute right-[8px] text-white text-[1.2em] top-[20px]" name="information-circle-outline"></ion-icon>
+                        <input class="w-full h-[50px] bg-transparent border-none outline-none pr-[35px] pl-[5px] text-white" type="number" onkeydown="javascript: return ['Backspace','Delete','ArrowLeft','ArrowRight'].includes(event.code) ? true : !isNaN(Number(event.key)) && event.code!=='Space'" name="tier5s" id="tier5s" value="3" min="3" max="12">
+                        <output class="absolute top-1/2 left-[5px] translate-y-[-150%] text-white pointer-events-none duration-500" name="tier5s" id="tier5sId">Total T5s</output>
+                    </div>
+                    <div class="relative mx-0 my-[30px] w-[310px] border-b-2 border-solid border-white">
+                        <ion-icon title="Total non-T5 upgrades, including the first 4 of any additional T5" class="cursor-pointer absolute right-[8px] text-white text-[1.2em] top-[20px]" name="information-circle-outline"></ion-icon>
+                        <input class="w-full h-[50px] bg-transparent border-none outline-none pr-[35px] pl-[5px] text-white" type="number" onkeydown="javascript: return ['Backspace','Delete','ArrowLeft','ArrowRight'].includes(event.code) ? true : !isNaN(Number(event.key)) && event.code!=='Space'" name="upgrades" id="upgrades" value="0" min="0" max="100">
+                        <output class="absolute top-1/2 left-[5px] translate-y-[-150%] text-white pointer-events-none duration-500" name="upgrades" id="upgradesId">Upgrades</output>
+                    </div>
+                    <div class="relative mx-0 my-[30px] w-[310px] border-b-2 border-solid border-white">
+                        <ion-icon title="Total paragon power totems, found in Geraldo's shop" class="cursor-pointer absolute right-[8px] text-white text-[1.2em] top-[20px]" name="information-circle-outline"></ion-icon>
+                        <input class="w-full h-[50px] bg-transparent border-none outline-none pr-[35px] pl-[5px] text-white" type="number" onkeydown="javascript: return ['Backspace','Delete','ArrowLeft','ArrowRight'].includes(event.code) ? true : !isNaN(Number(event.key)) && event.code!=='Space'" name="geraldo" id="geraldo" value="0" min="0" max="1000">
+                        <output class="absolute top-1/2 left-[5px] translate-y-[-150%] text-white pointer-events-none duration-500" name="geraldo" id="geraldoId">Geraldo Totems</output>
+                    </div>
+                    <div class="flex flex-col items-center text-white">
+                        <pt class="text-red-500" id="warning"></pt>
+                        <pt class="text-red-500" id="warning_geraldo"></pt>
+                        <p class="mt-4" id="degree">Degree 1 (0/2000)</p>
+                        <p id="power">Total Power (0/200000)</p>
+                    </div>
+                    <div onclick="updateOnClick()">
+                        <script src="script.js"></script>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <footer class="py-5 h-70px flex justify-center px-[2%] bg-white/10">
+        <footer>
+            <div class="container">
+              <div class="grid">
+                <div class="column-xs-12">
+                  <ul class="flex items-center justify-center">
+                    <li><a href="https://twitter.com/wink4do" target="_blank" rel="noopener noreferrer"><ion-icon class="text-slate-300 hover:text-white duration-300 hover:scale-125 duration-300 h-6 w-6" name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="https://winkado.github.io/" target="_blank" rel="noopener noreferrer"><ion-icon class="text-slate-300 hover:text-white duration-300 hover:scale-125 duration-300 h-6 w-6 mx-5" name="book"></ion-icon></a></li>
+                    <li><a href="https://github.com/winkado" target="_blank" rel="noopener noreferrer"><ion-icon class="text-slate-300 hover:text-white duration-300 hover:scale-125 duration-300 h-6 w-6" name="logo-github"></ion-icon></a></li>
+                  </ul>
+                  <a class="text-white h-24" href="https://www.gnu.org/licenses/gpl-3.0.en.html">Licensed under GPL 3</a>
+                </div>
+              </div>
+            </div>
+          </footer>
+    </footer>
+</body>
+</html>
