@@ -155,15 +155,15 @@
             "version": "0.7",
             "versionDate": "2022-03-16T07:00:00-08:00",
             "versionDescription": "Bug Fixes and Improvements",
-            "downloadURL": "https://github.com/winkado/winkado.github.io/altstore/src/paperback/paperback.ipa",
+            "downloadURL": "https://github.com/winkado/winkado.github.io/blob/master/altstore/src/paperback/paperback.ipa",
             "localizedDescription": "An Ad-Free Comic/Book reader for iOS, Supports Komga and external sources.",
-            "iconURL": "https://github.com/winkado/winkado.github.io/altstore/src/paperback/icon.png",
+            "iconURL": "https://github.com/winkado/winkado.github.io/blob/master/altstore/src/paperback/icon.png",
             "tintColor": "#fd6a68",
             "size": 21747099,
             "screenshotURLs": [
-              "https://github.com/winkado/winkado.github.io/altstore/src/paperback/screenshot1.png",
-              "https://github.com/winkado/winkado.github.io/altstore/src/paperback/screenshot2.png",
-              "https://github.com/winkado/winkado.github.io/altstore/src/paperback/screenshot3.png"
+              "https://github.com/winkado/winkado.github.io/blob/master/altstore/src/paperback/screenshot1.png",
+              "https://github.com/winkado/winkado.github.io/blob/master/altstore/src/paperback/screenshot2.png",
+              "https://github.com/winkado/winkado.github.io/blob/master/altstore/src/paperback/screenshot3.png"
             ]
           },
           {
