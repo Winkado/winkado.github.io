@@ -168,7 +168,7 @@ function calculate() {
             if (power > 201999) {
                 document.getElementById("warning_geraldo").innerHTML = `You have ${Math.floor((power - 200000) / 2000)} more totems than necessary<pt>`
             } else {
-                document.getElementById("geraldoId").innerHTML = `Geraldo Totems`
+                document.getElementById("warning_geraldo").innerHTML = ``
             }
         }
     }

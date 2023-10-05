@@ -1,0 +1,366 @@
+{
+    "name": "Winkado's #1s",
+    "identifier": "com.winkado.source",
+    "sourceURL": "winkado.github.io/altstore/source.json",
+    "userinfo": {},
+    "apps": [
+        {
+            "name": "DolphiniOS",
+            "bundleIdentifier": "me.oatmealdome.dolphinios-njb",
+            "developerName": "OatmealDome",
+            "subtitle": "GameCube and Wii games on the go.",
+            "localizedDescription": "DolphiniOS is a port of the popular Dolphin emulator to iOS. Dolphin lets you play your favourite GameCube and Wii software with enhancements like higher resolutions, save states, and more. You can even play all of Nintendo's classics from past consoles through the Wii's Virtual Console library.\n\nPlease note that devices with A8 processors and older are not compatible.",
+            "iconURL": "https://cdn.oatmealdome.me/dolphinios/AppIcon.appiconset/ios_marketing1024x1024.png",
+            "tintColor": "41cdff",
+            "screenshotURLs": [
+              "https://cdn.oatmealdome.me/dolphinios/altstore/screenshots/screenshot_6s_1.PNG",
+              "https://cdn.oatmealdome.me/dolphinios/altstore/screenshots/screenshot_6s_2.PNG",
+              "https://cdn.oatmealdome.me/dolphinios/altstore/screenshots/screenshot_6s_3_reup.PNG",
+              "https://cdn.oatmealdome.me/dolphinios/altstore/screenshots/screenshot_6s_4_edit.png"
+            ],
+            "beta": false,
+            "versions": [
+              {
+                "version": "3.2.1",
+                "date": "2022-09-11T22:00:00.0000000Z",
+                "localizedDescription": "This update contains the following changes:\n\n- Fixed ubershaders.\n- Fixed fastmem crashing on iOS 16.\n\nPlease update DolphiniOS to version 3.2.1 before attempting to use it on iOS 16.",
+                "downloadURL": "https://github.com/OatmealDome/dolphin/releases/download/3.2.1/DolphiniOS-NJB-3.2.1-213.ipa",
+                "size": 80253902,
+                "minOSVersion": "12.0",
+                "maxOSVersion": "99.0"
+              }
+            ],
+            "version": "3.2.1",
+            "versionDate": "2022-09-11T22:00:00.0000000Z",
+            "versionDescription": "This update contains the following changes:\n\n- Fixed ubershaders.\n- Fixed fastmem crashing on iOS 16.\n\nPlease update DolphiniOS to version 3.2.1 before attempting to use it on iOS 16.",
+            "downloadURL": "https://github.com/OatmealDome/dolphin/releases/download/3.2.1/DolphiniOS-NJB-3.2.1-213.ipa",
+            "size": 80253902
+          },
+          {
+            "name": "iTorrent",
+            "bundleIdentifier": "ru.nonamedude.iTorrent",
+            "developerName": "XITRIX",
+            "subtitle": "Ordinary iOS torrent client app.",
+            "version": "1.8.3",
+            "versionDate": "2020-09-20",
+            "versionDescription": "What's new:\n\n\u2022 Text accessibility support added\n\u2022 Huge backend refactoring\n\u2022 Libtorrent updated to 1.2.9\n\u2022 Minor UI improvements\n\u2022 Many bugs fixed (possibly new ones added)",
+            "downloadURL": "https://github.com/XITRIX/iTorrent/releases/download/v1.8.3/iTorrent.ipa",
+            "localizedDescription": "iTorrent is an ordinary torrent client for iOS with Files app support.\n\nWhat can this app do:\n\n\u2022 Download in the background\n\u2022 Sequential download (use VLC to watch films while loading)\n\u2022 Add torrent files from Share menu (Safari and other apps)\n\u2022 Add magnet links directly from Safari\n\u2022 Store files in Files app (iOS 11+)\n\u2022 File sharing directly from app\n\u2022 Download torrent by link\n\u2022 Download torrent by magnet\n\u2022 Send notification on torrent downloaded\n\u2022 FTP Server (unstable)\n\u2022 Select files to download or not\n\u2022 Change UI to dark theme\n\nNow supporting these localizations:\n\u2022 English\n\u2022 Russian\n\u2022 Turkish",
+            "iconURL": "https://i.imgur.com/C3KwMP5.png",
+            "tintColor": "#e32b3c",
+            "size": 21218913,
+            "permissions": [
+              {
+                "type": "photos",
+                "usageDescription": "Allows iTorrent to save files to Photos app."
+              }
+            ],
+            "screenshotURLs": [
+              "https://i.imgur.com/0o7qou3.png",
+              "https://i.imgur.com/sO510zC.png",
+              "https://i.imgur.com/MQPWxYz.png",
+              "https://i.imgur.com/xTAo5uE.png"
+            ],
+            "versions": [
+              {
+                "version": "1.8.3",
+                "date": "2020-09-20",
+                "downloadURL": "https://github.com/XITRIX/iTorrent/releases/download/v1.8.3/iTorrent.ipa",
+                "localizedDescription": "What's new:\n\n\u2022 Text accessibility support added\n\u2022 Huge backend refactoring\n\u2022 Libtorrent updated to 1.2.9\n\u2022 Minor UI improvements\n\u2022 Many bugs fixed (possibly new ones added)",
+                "size": 21218913
+              }
+            ]
+          },
+          {
+            "name": "MAME4iOS",
+            "bundleIdentifier": "com.example.mame4ios",
+            "developerName": "yoshisuga",
+            "subtitle": "A MAME Arcade emulator for iOS.",
+            "version": "2022.5",
+            "versionDate": "2022-12-12T02:16:35Z",
+            "versionDescription": "# 2022.3\n\n# Version 2022.3\r\n\r\n* iOS 16 support\r\n",
+            "downloadURL": "https://github.com/yoshisuga/MAME4iOS/releases/download/2022.5/MAME4iOS-2022.5-139.ipa",
+            "localizedDescription": "MAME stands for Multi Arcade Machine Emulator. This app lets you play arcade games from the past 30+ years on your iPhone, iPad, macOS, or AppleTV.\n\nMore than 2000 games are supported, and the currently supported romset version is MAME 0.139u1 (September 2010).\n\nOther nifty features include:\n* 64-bit binary to run on modern and future iOS devices\n* Supports modern device screen sizes, including iPhone X/XR/XS/XS Max and iPad Pro\n* A native iOS/iPadOS/tvOS frontend (by @ToddLa, new in 2020!)\n* A native Metal rendering engine (by @ToddLa, new in 2020!)\n* tvOS support (new in 2019!)\n* An in-app web server to transfer files from your computer (new in 2019!)\n* Transfer ROMs, Artwork, and ROMSETs via AirDrop or iOS File Sharing (new in 2020!)\n* Multiple MFI controllers (up to 4 with dual analog support - @DarrenBranford)\n* Supports using the touch screen as a lightgun\n* Turbo mode toggle for buttons\n* Touch analog for games like Arkanoid\n* Builds in Xcode 11.x/12.x and runs on latest iOS 13/14 versions",
+            "iconURL": "https://i.imgur.com/gZCjhLl.png",
+            "tintColor": "#51bacc",
+            "size": 52332306,
+            "permissions": [
+              {
+                "type": "bluetooth",
+                "usageDescription": "We need bluetooth for peer play and steam controllers."
+              }
+            ],
+            "screenshotURLs": [
+              "https://i.imgur.com/0JkUpEA.png",
+              "https://i.imgur.com/UJXiIUM.png"
+            ],
+            "absoluteVersion": "2022.3",
+            "appID": "com.example.mame4ios",
+            "versions": [
+              {
+                "absoluteVersion": "2022.5",
+                "date": "2022-12-12T02:16:35Z",
+                "localizedDescription": "# 2022.5\n\n* Updated to [MAME 250](https://www.mamedev.org/releases/whatsnew_0250.txt).\r\n* tvOS UX: use a Alert instead of a inline Segmented Control.\r\n* Show upload feedback in Web Server UX.\r\n* Added `Make First Favorite` to game context menu.\r\n",
+                "size": 52332306,
+                "version": "2022.5",
+                "downloadURL": "https://github.com/yoshisuga/MAME4iOS/releases/download/2022.5/MAME4iOS-2022.5-139.ipa"
+              },
+              {
+                "version": "2022.3",
+                "date": "2022-09-17T02:33:58Z",
+                "downloadURL": "https://github.com/yoshisuga/MAME4iOS/releases/download/2022.3/MAME4tvOS-2022.3-139.ipa",
+                "localizedDescription": "# 2022.3\n\n# Version 2022.3\r\n\r\n* iOS 16 support\r\n",
+                "size": 46033990,
+                "absoluteVersion": "2022.3"
+              }
+            ]
+          },
+          {
+            "name": "PPSSPP",
+            "bundleIdentifier": "org.ppsspp.ppsspp",
+            "developerName": "Henrik Rydg\u00e5rd",
+            "version": "1.13.2",
+            "versionDate": "2022-09-18T23:59:49Z",
+            "versionDescription": "# v1.13.2\n\n",
+            "downloadURL": "https://github.com/QuarkSources/ppsspp-builder/releases/download/v1.13.2/PPSSPP_v1.13.2.ipa",
+            "localizedDescription": "PPSSPP can run your PSP games on your iPhone and iPad in full HD resolution. It can even upscale textures that would otherwise be too blurry as they were made for the small screen of the original PSP. Even on modern iPhones and iPads, you can often run at double the original resolution.",
+            "iconURL": "https://i.imgur.com/JP0Fncv.png",
+            "tintColor": "#21486b",
+            "size": 14509458,
+            "screenshotURLs": [
+              "https://i.imgur.com/CWl6GgH.png",
+              "https://i.imgur.com/SxmN1M0.png",
+              "https://i.imgur.com/sGWgR6z.png",
+              "https://i.imgur.com/AFKTdmZ.png"
+            ],
+            "subtitle": "PlayStation Portable games on iOS.",
+            "absoluteVersion": "1.13.2",
+            "appID": "org.ppsspp.ppsspp",
+            "versions": [
+              {
+                "version": "1.13.2",
+                "date": "2022-09-18T23:59:49Z",
+                "downloadURL": "https://github.com/QuarkSources/ppsspp-builder/releases/download/v1.13.2/PPSSPP_v1.13.2.ipa",
+                "localizedDescription": "# v1.13.2\n\n",
+                "size": 14509458,
+                "absoluteVersion": "1.13.2"
+              }
+            ]
+          },
+          {
+            "name": "Paperback",
+            "bundleIdentifier": "com.faizandurrani.paperback.ios",
+            "developerName": "Faizan Durrani",
+            "subtitle": "An Ad-Free Comic/Book reader for iOS, Supports Komga and external sources.",
+            "version": "0.7",
+            "versionDate": "2022-03-16T07:00:00-08:00",
+            "versionDescription": "Bug Fixes and Improvements",
+            "downloadURL": "https://example.com/app.ipa",
+            "localizedDescription": "An Ad-Free Comic/Book reader for iOS, Supports Komga and external sources.",
+            "iconURL": "https://via.placeholder.com/256x256.png/0000FF?text=Icon",
+            "tintColor": "000000",
+            "size": 0,
+            "screenshotURLs": [
+              "https://via.placeholder.com/750x1334.png/0000FF?text=Screenshot+1",
+              "https://via.placeholder.com/750x1334.png/FF0000?text=Screenshot+2",
+              "https://via.placeholder.com/750x1334.png/00FF00?text=Screenshot+3"
+            ]
+          },
+          {
+            "name": "Play!",
+            "bundleIdentifier": "com.virtualapplications.play",
+            "appID": "com.virtualapplications.play",
+            "developerName": "Jean-Philip Desjardins",
+            "subtitle": "PlayStation 2 Games on iOS.",
+            "version": "0.58-8-g70a126e3",
+            "versionDate": "2023-01-10",
+            "versionDescription": "Update submodules. [70a126e3]",
+            "downloadURL": "https://s3.us-east-2.amazonaws.com/playbuilds/70a126e3/Play.ipa",
+            "localizedDescription": "Play! is a portable PlayStation2 emulator. The focus of the project is on making PlayStation2 emulation easy and accessible. Just pop in your favorite game's disc and have fun!\n\n\u2022 No BIOS required. Play! is an high-level emulator.\n\u2022 Easy configuration. No custom settings to fix specific games.\n\u2022 Available on many platforms, making sure the experience is the same quality everywhere.",
+            "iconURL": "https://i.imgur.com/NOi1cdl.png",
+            "tintColor": "#5f5fff",
+            "size": 33200000,
+            "screenshotURLs": [
+              "https://user-images.githubusercontent.com/64176728/209461585-74b856e0-ae30-41be-91ce-d3eb262be260.png",
+              "https://user-images.githubusercontent.com/64176728/209461763-c122f9f6-5103-4c59-b730-0e5b34b5937b.png",
+              "https://user-images.githubusercontent.com/64176728/209461593-f771a49d-a44d-4d9c-8bb7-dfab48c5dd25.png"
+            ],
+            "versions": [
+              {
+                "version": "0.58-8-g70a126e3",
+                "date": "2023-01-10",
+                "downloadURL": "https://s3.us-east-2.amazonaws.com/playbuilds/70a126e3/Play.ipa",
+                "localizedDescription": "Update submodules. [70a126e3]",
+                "size": 33200000
+              },
+              {
+                "version": "0.58-7-gdf46379d",
+                "date": "2023-01-03",
+                "downloadURL": "https://s3.us-east-2.amazonaws.com/playbuilds/df46379d/Play.ipa",
+                "localizedDescription": "Add copy Qt DLL phase. [df46379d]",
+                "size": 33200000
+              },
+              {
+                "version": "0.57-22-g1126c39c",
+                "date": "2022-10-17",
+                "downloadURL": "https://s3.us-east-2.amazonaws.com/playbuilds/1126c39c/Play.ipa",
+                "localizedDescription": "Bug fixes and improvements.",
+                "size": 13371703
+              },
+              {
+                "version": "0.5",
+                "date": "2022-03-07",
+                "downloadURL": "https://github.com/QuarkSources/quarksources.github.io/releases/download/v1.0/Play.ipa",
+                "localizedDescription": "Bug fixes.",
+                "size": 12346902
+              }
+            ]
+          },
+          {
+            "name": "PojavLauncher",
+            "bundleIdentifier": "net.kdt.pojavlauncher",
+            "developerName": "PojavLauncherTeam",
+            "subtitle": "Bringing Minecraft: Java Edition to mobile devices.",
+            "version": "2.2",
+            "versionDate": "2023-05-06T17:00:00-05:00",
+            "versionDescription": "PojavLauncher 2.2 Deepslate puts a focus on our core functionality, working to squash bugs, improve performance, and increase reliability.",
+            "downloadURL": "https://github.com/PojavLauncherTeam/PojavLauncher_iOS/releases/download/v2.2/net.kdt.pojavlauncher-2.2-ios.ipa",
+            "localizedDescription": "PojavLauncher is a Minecraft: Java Edition launcher for iOS and Android based on the Boardwalk project.\n\nâ€¢ Play most versions of Minecraft, from the very first beta to the latest snapshots.\nâ€¢ Customize with mods, resource packs, and compatible shaders\nâ€¢ Create multiple instances of Minecraft for multiple versions\nâ€¢ Adjust on-screen controls to your liking, or use keyboard and mouse or controllers\nâ€¢ Play online with full Java Edition servers\n...and so much more!\n\nNotice: PojavLauncher iOS requires JIT to function correctly. This application automatically enables JIT with JITStreamer, TrollStore, or when jailbroken, however other methods can be used if required.",
+            "iconURL": "https://raw.githubusercontent.com/PojavLauncherTeam/PojavLauncher_iOS/main/Natives/Assets.xcassets/AppIcon-Dark.appiconset/AppIcon-Dark_1024x1024.png",
+            "tintColor": "746344",
+            "size": 108175347,
+            "screenshotURLs": [
+              "https://alt.crystall1ne.dev/Pojav-MainMenu.png",
+              "https://alt.crystall1ne.dev/Pojav-SplitMenu.png",
+              "https://alt.crystall1ne.dev/Pojav-GameLoad.png",
+              "https://alt.crystall1ne.dev/Pojav-InGame.png"
+            ]
+          },
+          {
+            "name": "Provenance",
+            "bundleIdentifier": "org.provenance-emu.provenance",
+            "developerName": "Joe Mattiello",
+            "subtitle": "Multi-emulator frontend for iOS & tvOS",
+            "version": "2.2.1",
+            "versionDate": "2022-12-30T00:01:00-05:00",
+            "versionDescription": "Pre-release of Play!, Dolphin and PPSSPP. JIT Required or cores will crash.",
+            "downloadURL": "https://provenance-builds.s3-us-east-2.amazonaws.com/apps/2.2.1.beta1/Provenance.ipa",
+            "localizedDescription": "Multi-emulator frontend, supporting various Atari, Bandai, NEC, Nintendo, Sega, SNK and Sony console systems.",
+            "iconURL": "https://provenance-emu.com/images/icons/icon.512x512.png",
+            "tintColor": "#162434",
+            "size": 77010038,
+            "permissions": [
+              {
+                "type": "photos",
+                "usageDescription": "Allows Provenance to use images from your Photo Library as game artwork."
+              }
+            ],
+            "screenshotURLs": [
+              "https://provenance-emu.com/blog/2022/12/09/release-2.2.0/images/IMG_2306.jpg",
+              "https://provenance-emu.com/blog/2022/12/09/release-2.2.0/images/IMG_2307.jpg",
+              "https://provenance-emu.com/blog/2022/12/09/release-2.2.0/images/IMG_2308.jpg",
+              "https://provenance-emu.com/blog/2022/12/09/release-2.2.0/images/IMG_2309.jpg",
+              "https://provenance-emu.com/blog/2022/12/09/release-2.2.0/images/IMG_2310.jpg",
+              "https://provenance-emu.com/blog/2022/12/09/release-2.2.0/images/IMG_2311.jpg",
+              "https://provenance-emu.com/blog/2022/12/09/release-2.2.0/images/IMG_2312.jpg"
+            ]
+          },
+          {
+            "name": "emuThreeDS",
+            "bundleIdentifier": "com.antique.emuThreeDS",
+            "developerName": "Antique",
+            "subtitle": "Nintendo 3DS emulator for iPad and iPhone",
+            "localizedDescription": "emuThreeDS is the worlds first legitimate Nintendo 3DS emulator for iPad and iPhone based on the incredible Citra emulator",
+            "iconURL": "https://emuplace.app/resources/images/3ds.png",
+            "tintColor": "FF3A30",
+            "beta": true,
+            "screenshotURLs": [
+                "https://emuplace.app/emulators/emuthreeds/screenshots/library.png",
+                "https://emuplace.app/emulators/emuthreeds/screenshots/library_rom_menu.png",
+                "https://emuplace.app/emulators/emuthreeds/screenshots/ingame_portrait.png",
+                "https://emuplace.app/emulators/emuthreeds/screenshots/ingame_landscape.png",
+                "https://emuplace.app/emulators/emuthreeds/screenshots/settings.png"
+            ],
+            "versions": [
+                {
+                    "version": "1.0.7.1",
+                    "date": "2023-08-26",
+                    "localizedDescription": "https://emuplace.app/emulators/emuthreeds",
+                    "downloadURL": "https://emuplace.app/emulators/emuthreeds/ipas/emuThreeDS_v1.0.7.1%20(2).ipa",
+                    "size": 35010897,
+                    "minOSVersion": "14.0"
+                }
+            ],
+            "version": "1.0.7.1",
+            "versionDate": "2023-08-26",
+            "versionDescription": "https://emuplace.app/emulators/emuthreeds",
+            "downloadURL": "https://emuplace.app/emulators/emuthreeds/ipas/emuThreeDS_v1.0.7.1%20(2).ipa",
+            "size": 35010897
+        },
+        {
+          "name": "uYouPlus (uYou+)",
+          "beta": false,
+          "bundleIdentifier": "com.google.ios.youtube",
+          "developerName": "MiRO92 & Qn_",
+          "downloadURL": "https://github.com/qnblackcat/uYouPlus/releases/download/v18.14.1-3.0/uYouPlus_18.14.1_3.0.ipa",
+          "iconURL": "https://raw.githubusercontent.com/qnblackcat/My-AltStore-repo/main/ScreenShot/icon_clipped.png",
+          "localizedDescription": "uYouPlus is a modified version of uYou with some extra features! (requires iOS 14.0 and later).\n\nFull infomation about uYouPlus (uYou+) is available on my Github: https://github.com/qnblackcat/uYouPlus/\n\nCredits: Please keep the Credits if you re-up uYouPlus! \nhttps://github.com/qnblackcat/uYouPlus#credits\n\nAttention:\n- If you like the app, considering support the developers!\n- YTUHD is not stable atm. You might encounter stuttering, heat, battery drain..., especially when playing at 2160p (4K) quality. However, this should not happen if you use TrollStore.\n- Unless you're using TrollStore, deep-link (aka Open in the YouTube App) simply will not work.\n\nKnown issues:\n- uYou's issues: https://github.com/MiRO92/uYou-for-YouTube/issues\n- uYouPlus's issues: https://github.com/qnblackcat/uYouPlus",
+          "screenshotURLs": [
+            "https://raw.githubusercontent.com/qnblackcat/My-AltStore-repo/main/ScreenShot/IMG_2393.PNG",
+            "https://raw.githubusercontent.com/qnblackcat/My-AltStore-repo/main/ScreenShot/IMG_1522.PNG",
+            "https://raw.githubusercontent.com/qnblackcat/My-AltStore-repo/main/ScreenShot/IMG_2394.PNG",
+            "https://raw.githubusercontent.com/qnblackcat/My-AltStore-repo/main/ScreenShot/IMG_1523.PNG",
+            "https://raw.githubusercontent.com/qnblackcat/My-AltStore-repo/main/ScreenShot/IMG_2395.PNG"
+          ],
+          "size": 123882320,
+          "subtitle": "A modified version of uYou with extra features! Requires iOS 14.0 and later.",
+          "tintColor": "e85567",
+          "version": "18.14.1",
+          "versionDate": "2023-4-27T12:00:00-01:00",
+          "versionDescription": "v18.14.1 (3.0): The changelog can be found at\nhttps://github.com/qnblackcat/uYouPlus/releases/tag/latest"
+        },
+        {
+          "name": "XPatcher",
+          "bundleIdentifier": "com.wh0ba.xpatcher",
+          "developerName": "Wh0ba",
+          "subtitle": "A Rom-patcher utility for your iOS device.",
+          "version": "2.2",
+          "versionDate": "2022-01-07T10:15:55Z",
+          "versionDescription": "# File hashes when selecting files\n\n### XPatcher 2.2\r\n### A small updated with a little feature \r\n\r\nNow when you select a file in the Documents tab, it will show SHA1, MD5, and CRC32 hashes of the selected file.\r\nclosing #5\r\nother changes might be adding .vcdiff to the recognized patch formats (XDelta) but so far it seems kinda broken as stated in #6 .\r\n\r\n**Full Changelog**: https://github.com/Wh0ba/XPatcher/compare/2.0...v2.2",
+          "downloadURL": "https://github.com/Wh0ba/XPatcher/releases/download/v2.2/XPatcher_2.2.ipa",
+          "localizedDescription": "XPatcher is a GUI front-end for flips, libppf, xdelta, and libRUP patching libraries.\n\nThis app allows you to apply patches to files on your iOS devices, mostly used to apply rom hacks to video game roms with a simple to use interface to make it as user-friendly as possible.",
+          "iconURL": "https://i.imgur.com/cgrsWgC.png",
+          "tintColor": "#ff767d",
+          "size": 357189,
+          "screenshotURLs": [
+            "https://i.imgur.com/nFunb9n.png",
+            "https://i.imgur.com/7UvBK4J.png"
+          ],
+          "absoluteVersion": "2.2",
+          "versions": [
+            {
+              "version": "2.2",
+              "date": "2022-01-07T10:15:55Z",
+              "downloadURL": "https://github.com/Wh0ba/XPatcher/releases/download/v2.2/XPatcher_2.2.ipa",
+              "localizedDescription": "# File hashes when selecting files\n\n### XPatcher 2.2\r\n### A small updated with a little feature \r\n\r\nNow when you select a file in the Documents tab, it will show SHA1, MD5, and CRC32 hashes of the selected file.\r\nclosing #5\r\nother changes might be adding .vcdiff to the recognized patch formats (XDelta) but so far it seems kinda broken as stated in #6 .\r\n\r\n**Full Changelog**: https://github.com/Wh0ba/XPatcher/compare/2.0...v2.2",
+              "size": 357189,
+              "absoluteVersion": "2.2"
+            }
+          ]
+        }
+    ],
+    "news": [
+      {
+        "title": "Winkado's Favorites!",
+        "identifier": "winkado-number-ones",
+        "caption": "This source includes DolphinIOS, iTorrent, Mame4IOS, PPSSPP, Paperback, Play!, PojavLauncher, Provenance, emuThreeDS, uYouPlus, and XPatcher.",
+        "tintColor": "#505050",
+        "imageURL": "https://i.imgur.com/DahJIZv.png",
+        "appID": "com.winkado.source",
+        "date": "2023-10-05",
+        "notify": false
+      }
+    ],
+    "version": 2,
+    "apiVersion": "v2"
+}

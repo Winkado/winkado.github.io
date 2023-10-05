@@ -3,94 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Epitome</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <style>
-        /* Hide number input arrows */
-        /* Chrome, Safari, Edge, Opera */
-        input::-webkit-outer-spin-button,
-        input::-webkit-inner-spin-button {
-          -webkit-appearance: none;
-          margin: 0;
-        }
-        
-        /* Firefox */
-        input[type=number] {
-          -moz-appearance: textfield;
-          appearance: textfield;
-        }
-        </style> 
-    <meta name="color-scheme" content="dark">
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>winkado.github.io</title>
 </head>
-<body class="bg-gradient-to-r from-[#11215b] to-[#d100fe]">
-    <header class='py-4 h-70px flex items-center justify-center px-[2%] bg-white/10'>           
-        <div class="flex items-center">
-            <img src="./src/paragon.png" class="h-14">
-            <h2 class="text-white text-2xl font-bold m-2">Epitome - BTD6 Paragon Calculator</h2>
+<body class="bg-[#0f172a]">
+    <nav class="bg-white dark:bg-gray-900 bg-opacity-80 dark:bg-opacity-80 backdrop-blur-sm fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <img src="" class="h-12 mr-3" >
+        <div class="flex md:order-2">
+            <button type="button" class="md:hidden text-white bg-[#7773fb] hover:bg-[#5e5bc7] hover:scale-[110%] ease-in-out duration-200 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-[#7773fb] dark:hover:bg-[#7773fb]">Contact</button>
+            <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
         </div>
-    </header>
-    <section class="flex justify-center items-center min-h-screen w-full">
-        <div class="flex justify-center items-center relative w-[400px] h-[700px] border-[2px] border-solid border-[#ffffff00] md:border-[#ffffff40] rounded-[20px] bg-white/0 md:bg-white/10">
-            <div class="form-value">
-                    <div class="relative mx-0 my-[30px] w-[310px] border-b-2 border-solid border-white">
-                        <ion-icon title="Total cash spent, excluding the first 3 T5s" class="cursor-pointer absolute right-[8px] text-white text-[1.2em] top-[20px]" name="information-circle-outline"></ion-icon>
-                        <input class="w-full h-[50px] bg-transparent border-none outline-none pr-[35px] pl-[5px] text-white" type="number" onkeydown="javascript: return ['Backspace','Delete','ArrowLeft','ArrowRight'].includes(event.code) ? true : !isNaN(Number(event.key)) && event.code!=='Space'" name="cost" id="cost" value="0" min="0" max="250000" step="25">
-                        <output class="absolute top-1/2 left-[5px] translate-y-[-150%] text-white pointer-events-none duration-500" name="cost" id="costId">Cash Spent</output>
-                    </div>
-                    <div class="relative mx-0 my-[30px] w-[310px] border-b-2 border-solid border-white">
-                        <ion-icon title="Total pops, across all towers" class="cursor-pointer absolute right-[8px] text-white text-[1.2em] top-[20px]" name="information-circle-outline"></ion-icon>
-                        <input class="w-full h-[50px] bg-transparent border-none outline-none pr-[35px] pl-[5px] text-white" type="number" onkeydown="javascript: return ['Backspace','Delete','ArrowLeft','ArrowRight'].includes(event.code) ? true : !isNaN(Number(event.key)) && event.code!=='Space'" name="pops" id="pops" value="0" min="0" max="16200000" step="180">
-                        <output class="absolute top-1/2 left-[5px] translate-y-[-150%] text-white pointer-events-none duration-500" name="pops" id="popsId">Total Pops</output>
-                    </div>
-                    <div class="relative mx-0 my-[30px] w-[310px] border-b-2 border-solid border-white">
-                        <ion-icon title="Total cash generated, applies to bottom path buccaneers" class="cursor-pointer absolute right-[8px] text-white text-[1.2em] top-[20px]" name="information-circle-outline"></ion-icon>
-                        <input class="w-full h-[50px] bg-transparent border-none outline-none pr-[35px] pl-[5px] text-white" type="number" onkeydown="javascript: return ['Backspace','Delete','ArrowLeft','ArrowRight'].includes(event.code) ? true : !isNaN(Number(event.key)) && event.code!=='Space'" name="cash" id="cash" value="0" min="0" max="4050000" step="45">
-                        <output class="absolute top-1/2 left-[5px] translate-y-[-150%] text-white pointer-events-none duration-500" name="cash" id="cashId">Total Cash Generated</output>
-                    </div>
-                    <div class="relative mx-0 my-[30px] w-[310px] border-b-2 border-solid border-white">
-                        <ion-icon title="Total *additional T5s, excluding the first 3" class="cursor-pointer absolute right-[8px] text-white text-[1.2em] top-[20px]" name="information-circle-outline"></ion-icon>
-                        <input class="w-full h-[50px] bg-transparent border-none outline-none pr-[35px] pl-[5px] text-white" type="number" onkeydown="javascript: return ['Backspace','Delete','ArrowLeft','ArrowRight'].includes(event.code) ? true : !isNaN(Number(event.key)) && event.code!=='Space'" name="tier5s" id="tier5s" value="3" min="3" max="12">
-                        <output class="absolute top-1/2 left-[5px] translate-y-[-150%] text-white pointer-events-none duration-500" name="tier5s" id="tier5sId">Total T5s</output>
-                    </div>
-                    <div class="relative mx-0 my-[30px] w-[310px] border-b-2 border-solid border-white">
-                        <ion-icon title="Total non-T5 upgrades, including the first 4 of any additional T5" class="cursor-pointer absolute right-[8px] text-white text-[1.2em] top-[20px]" name="information-circle-outline"></ion-icon>
-                        <input class="w-full h-[50px] bg-transparent border-none outline-none pr-[35px] pl-[5px] text-white" type="number" onkeydown="javascript: return ['Backspace','Delete','ArrowLeft','ArrowRight'].includes(event.code) ? true : !isNaN(Number(event.key)) && event.code!=='Space'" name="upgrades" id="upgrades" value="0" min="0" max="100">
-                        <output class="absolute top-1/2 left-[5px] translate-y-[-150%] text-white pointer-events-none duration-500" name="upgrades" id="upgradesId">Upgrades</output>
-                    </div>
-                    <div class="relative mx-0 my-[30px] w-[310px] border-b-2 border-solid border-white">
-                        <ion-icon title="Total paragon power totems, found in Geraldo's shop" class="cursor-pointer absolute right-[8px] text-white text-[1.2em] top-[20px]" name="information-circle-outline"></ion-icon>
-                        <input class="w-full h-[50px] bg-transparent border-none outline-none pr-[35px] pl-[5px] text-white" type="number" onkeydown="javascript: return ['Backspace','Delete','ArrowLeft','ArrowRight'].includes(event.code) ? true : !isNaN(Number(event.key)) && event.code!=='Space'" name="geraldo" id="geraldo" value="0" min="0" max="1000">
-                        <output class="absolute top-1/2 left-[5px] translate-y-[-150%] text-white pointer-events-none duration-500" name="geraldo" id="geraldoId">Geraldo Totems</output>
-                    </div>
-                    <div class="flex flex-col items-center text-white">
-                        <pt class="text-red-500" id="warning"></pt>
-                        <pt class="text-red-500" id="warning_geraldo"></pt>
-                        <p class="mt-4" id="degree">Degree 1 (0/2000)</p>
-                        <p id="power">Total Power (0/200000)</p>
-                    </div>
-                    <div onclick="updateOnClick()">
-                        <script src="script.js"></script>
-                    </div>
-            </div>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+          <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <a href="#" class="block py-2 pl-3 pr-4 text-white bg-[#7773fb] rounded md:bg-transparent md:text-[#7773fb] md:p-0 md:dark:text-[#7773fb]" aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#7773fb] md:p-0 md:dark:hover:text-[#7773fb] ease-in-out duration-200 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#7773fb] md:p-0 md:dark:hover:text-[#7773fb] ease-in-out duration-200 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Work</a>
+            </li>
+            <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#7773fb] md:p-0 md:dark:hover:text-[#7773fb] ease-in-out duration-200 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+              </li>
+          </ul>
         </div>
-    </section>
-    <footer class="py-5 h-70px flex justify-center px-[2%] bg-white/10">
-        <footer>
-            <div class="container">
-              <div class="grid">
-                <div class="column-xs-12">
-                  <ul class="flex items-center justify-center">
-                    <li><a href="https://twitter.com/wink4do" target="_blank" rel="noopener noreferrer"><ion-icon class="text-slate-300 hover:text-white duration-300 hover:scale-125 h-6 w-6" name="logo-twitter"></ion-icon></a></li>
-                    <li><a href="https://winkado.github.io/" target="_blank" rel="noopener noreferrer"><ion-icon class="text-slate-300 hover:text-white duration-300 hover:scale-125 h-6 w-6 mx-5" name="book"></ion-icon></a></li>
-                    <li><a href="https://github.com/winkado" target="_blank" rel="noopener noreferrer"><ion-icon class="text-slate-300 hover:text-white duration-300 hover:scale-125 h-6 w-6" name="logo-github"></ion-icon></a></li>
-                  </ul>
-                  <a class="text-white h-24" href="https://www.gnu.org/licenses/gpl-3.0.en.html">Licensed under GPL 3</a>
-                </div>
-              </div>
-            </div>
-          </footer>
-    </footer>
+        </div>
+    </nav>
+
+    <div class="text-white pt-20">
+        <li><a href="epitome/index.html">Epitome</a></li>
+        <li><a href="altstore/source.json">AltStore Source</a></li>
+    </div>
+
 </body>
 </html>
